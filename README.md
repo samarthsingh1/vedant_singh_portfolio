@@ -52,10 +52,13 @@ Everything lives in `index.html`.
 
 ## Deploying
 
-The site is static, so any static host works:
+The site is set up for GitHub Pages at **https://samarthsingh1.github.io/vedant_singh_portfolio/**. The canonical and Open Graph URLs in `index.html` point there, and `.nojekyll` makes Pages serve the files as they are.
 
-- **GitHub Pages:** Settings → Pages → Deploy from branch → `main` / root. A private repository needs GitHub Pro, Team or Enterprise to publish to Pages. The published site is public even when the repository is private.
-- **Netlify, Vercel or Cloudflare Pages:** import the repository with no build command and set the publish directory to `/`.
+To turn it on, open **Settings → Pages**, then under *Build and deployment* choose **Deploy from a branch**, select branch **`main`** and folder **`/ (root)`**, and click **Save**. The first publish takes a minute or two. After that, every push to `main` redeploys automatically.
+
+GitHub Pages for a private repository needs GitHub Pro, Team or Enterprise. On a free account, the repository has to be public before Pages can be enabled. Either way, the published site itself is public.
+
+Other static hosts (Netlify, Vercel, Cloudflare Pages) also work: import the repository with no build command and set the publish directory to `/`. If you use one of them, update the canonical and `og:url` tags.
 
 ## Licences
 
